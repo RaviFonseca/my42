@@ -1,21 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   myLib.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/09 14:27:25 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/04/09 14:59:04 by rfonseca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
 
-int     ft_strlen(char *str)
-{
-        int     i;
-        i = 0;
-        while (str[i] != '\0')
-                i++;
-        return (i);
-}
-
-char 	*ft_strcpy(char *dest, char *src)
+int	ft_strlen(char *str)
 {
 	int	i;
+
 	i = 0;
-	while ( src[i] != '\0')
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
+char	*ft_strcpy(char *dest, char *src)
+{
+	int	i;
+
+	i = 0;
+	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
@@ -24,9 +38,9 @@ char 	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-void    ft_putchar(char c){
-
-        write (1, &c, 1);
+void	ft_putchar(char c)
+{
+	write (1, &c, 1);
 }
 
 void	ft_putstr(char *str)
@@ -41,52 +55,54 @@ void	ft_putstr(char *str)
 	}
 }
 
-void    ft_putnbr(int nb){
-        if (nb < 0){
-                nb *= (-1);
-                write (1, "-",1);
-        }
+void	ft_putnbr(int nb)
+{
+	char	c;
 
-        if (nb >= 10)
-                ft_putnbr(nb/10);
-
-        char c = (nb %10) + '0';
-        write(1, &c, 1);
+	if (nb < 0)
+	{
+		nb *= (-1);
+		write (1, "-", 1);
+	}
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	c = (nb % 10) + '0';
+	write(1, &c, 1);
 }
 
 void	ft_swap_indx(int *a, int *b)
 {
-	int temp;
+	int	temp;
+
 	temp = *a;
 	*a = *b;
 	*b = temp;
 }
 
-char    *ft_strncat(char *dest, char *src, unsigned int nb)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-        int     i;
-        int     j;
+	int	i;
+	int	j;
 
-        i = 0;
-        j = 0;
-        while (dest[i] != '\0')
-                i++;
-        while (j<nb && src[j] != '\0')
-        {
-                dest[i + j] = src[j];
-                j++;
-        }
-        dest[i + j] = '\0';
-        return (dest);
-
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
+		i++;
+	while (j < nb && src[j] != '\0')
+	{
+		dest[i + j] = src[j];
+		j++;
+	}
+	dest[i + j] = '\0';
+	return (dest);
 }
 
-int     ft_strcmp(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-        int i;
-        i = 0;
+	int	i;
 
-        while ( (s1[i] == s2[i]) && s1[i])
-                i++;
-        return ( s1[i] - s2[i]);
+	i = 0;
+	while ((s1[i] == s2[i]) && s1[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
