@@ -12,18 +12,23 @@
 
 #include <unistd.h>
 
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
+		return (1024);
 	return (0);
 }
 /*
 #include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {
-	char c = 'a';
-	printf("%d\n",isalpha(c));
+	
+	printf("5 ft:%d\n",ft_isalpha('5'));
+        printf("5 og:%d\n\n",isalpha('5'));
+
+        printf("a ft:%d\n",ft_isalpha('a'));
+        printf("a og:%d\n\n",isalpha('a'));
 	return(0);
 }*/

@@ -22,6 +22,9 @@ NAME = libft.a
 
 INCLUDES = -I includes
 
+all: $(NAME)
+
+
 %.o: %.c
 	$(CC) -c -o $@ $< $(CFLAGS) $(INCLUDES)
 
