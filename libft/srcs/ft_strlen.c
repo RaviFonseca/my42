@@ -1,39 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 16:18:08 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/20 16:37:41 by rfonseca         ###   ########.fr       */
+/*   Created: 2026/04/20 17:18:27 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/04/20 18:10:22 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_toupper(int c)
+size_t	ft_strlen(const char *str)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
 /*
-#include <ctype.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-	printf("a ft: %c\n",ft_toupper('a'));
-	printf("a og: %c\n\n",toupper('a'));
+	printf("no value ft:%ld\n",ft_strlen(""));
+	printf("no value og:%ld\n\n",strlen(""));
 
-	printf("C ft: %c\n",ft_toupper('C'));
-        printf("C og: %c\n\n",toupper('C'));
+	printf("banana ft:%ld\n",ft_strlen("banana"));
+        printf("banana og:%ld\n\n",strlen("banana"));
 
-	printf("5 ft: %c\n",ft_toupper('5'));
-        printf("5 og: %c\n\n",toupper('5'));
+	printf("supercalidoucaligralicious ft: %ld
+	\n",ft_strlen("supercalidoucaligralicious"));
+        printf("supercalidoucaligralicious:%ld
+	\n\n",strlen("supercalidoucaligralicious"));
 
-	printf("= ft: %c\n",ft_toupper('='));
-        printf("= og: %c\n\n",toupper('='));
 	return (0);
 }*/

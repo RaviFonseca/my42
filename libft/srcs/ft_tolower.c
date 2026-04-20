@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/20 15:59:40 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/20 16:04:27 by rfonseca         ###   ########.fr       */
+/*   Created: 2026/04/20 16:18:08 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/04/20 17:05:23 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int	ft_isalnum(int c)
+int	ft_tolower(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')
-		|| (c >= '0' && c <= '9'))
-		return (8);
-	return (0);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
 /*
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
-int	main(void)
+int main(void)
 {
-	printf("5 ft:%d\n",ft_isalnum('5'));
-        printf("5 og:%d\n\n",isalnum('5'));
+	printf("A ft: %c\n",ft_tolower('A'));
+	printf("A og: %c\n\n",tolower('A'));
 
-        printf("a ft:%d\n",ft_isalnum('a'));
-        printf("a og:%d\n\n",isalnum('a'));
+	printf("c ft: %c\n",ft_tolower('c'));
+        printf("c og: %c\n\n",tolower('c'));
 
-	printf("@ ft:%d\n",ft_isalnum('@'));
-	printf("@ og:%d\n",isalnum('@'));
-	return(0);
+	printf("5 ft: %c\n",ft_tolower('5'));
+        printf("5 og: %c\n\n",tolower('5'));
+
+	printf("= ft: %c\n",ft_tolower('='));
+        printf("= og: %c\n\n",tolower('='));
+	return (0);
 }*/

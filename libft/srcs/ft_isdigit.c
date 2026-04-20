@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/20 16:06:39 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/04/20 16:07:10 by rfonseca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 int	ft_isdigit(int c)
@@ -6,7 +18,7 @@ int	ft_isdigit(int c)
 		return (2048);
 	return (0);
 }
-
+/*
 #include <stdio.h>
 #include <ctype.h>
 
@@ -17,4 +29,4 @@ int	main(void){
         printf("a ft:%d\n",ft_isdigit('a'));
         printf("a og:%d\n\n",isdigit('a'));
 	return(0);
-}
+}*/
