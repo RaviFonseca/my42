@@ -1,5 +1,5 @@
-#ifndef "MYLIB_H"
-#define "MYLIB_H"
+#ifndef MYLIB_H
+#define MYLIB_H
 
 int     ft_strlen(char *str);
 char	*ft_strcpy(char *dest, char *src);

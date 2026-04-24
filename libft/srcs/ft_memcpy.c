@@ -6,7 +6,7 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 16:38:31 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/22 17:50:18 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/04/24 17:22:04 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		d[i] = s[i];
 		i++;
 	}
-	return (d);
+	return (dest);
 }
 /*
 #include <stdio.h>
