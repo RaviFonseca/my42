@@ -6,7 +6,7 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/18 15:44:22 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/28 17:13:23 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/04/29 20:38:46 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t n);
-char	*ft_strlcat(char *dest, const char *src, size_t size);
+size_t	*ft_strlcat(char *dest, const char *src, size_t size);
 char	*ft_strchr(const char *str, int ch);
 char	*ft_strrchr(const char *str, int c);
 char	*ft_strrchr(char *str, char *substr);
