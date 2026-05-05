@@ -6,7 +6,7 @@
 #    By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/18 19:50:44 by rfonseca          #+#    #+#              #
-#    Updated: 2026/04/18 20:16:15 by rfonseca         ###   ########.fr        #
+#    Updated: 2026/05/04 16:59:01 by rfonseca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SRCS = $(wildcard srcs/*.c)
 
-OBJS = $(SRCS: *.c = %.o)
+OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
 
