@@ -6,7 +6,7 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/18 15:44:22 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/06 17:05:45 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/10 01:29:16 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 void	*ft_memset(void *str, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
+void	*calloc(size_t nitem, size_t size);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memchr(const void *str, int c, size_t n);
@@ -45,7 +46,7 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
-char	*ft_strsub(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
