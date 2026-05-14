@@ -6,7 +6,7 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:18:27 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/20 18:10:22 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/14 01:43:18 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *str)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (str[i] != '\0')

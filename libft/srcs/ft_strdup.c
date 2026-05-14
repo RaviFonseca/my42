@@ -6,22 +6,13 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:18:27 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/26 19:08:34 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/14 01:44:23 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-
-size_t	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {
