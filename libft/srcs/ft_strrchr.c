@@ -6,23 +6,13 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 11:01:56 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/01 12:51:30 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:15:57 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
-{
-	size_t	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
-char	*ft_strrchr(const char *str, int ch)
+char	*ft_strrchr(char *str, int ch)
 {
 	size_t	i;
 

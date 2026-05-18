@@ -6,13 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/08 16:35:20 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/09 20:45:40 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 16:25:01 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t nitems, size_t size)
 {

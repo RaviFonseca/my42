@@ -6,11 +6,10 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 23:43:17 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/16 00:52:44 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:35:15 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)

@@ -6,12 +6,10 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:18:27 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/14 01:44:23 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:54:47 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

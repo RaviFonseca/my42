@@ -6,11 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 11:01:56 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/01 11:56:11 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:49:18 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int ch)
 {

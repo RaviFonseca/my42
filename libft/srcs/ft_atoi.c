@@ -6,11 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 14:23:32 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/03 21:24:06 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 16:16:03 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

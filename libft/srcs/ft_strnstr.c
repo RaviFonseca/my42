@@ -6,11 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 16:54:39 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/02 22:07:10 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:13:33 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t len)
 {

@@ -6,11 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/02 22:39:22 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/03 01:22:19 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:08:32 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

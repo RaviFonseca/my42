@@ -6,11 +6,11 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 17:18:27 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/14 01:43:18 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:06:19 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

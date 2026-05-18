@@ -6,11 +6,10 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 17:38:57 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/06 19:04:27 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:05:43 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *s1, const char *s2, size_t n)

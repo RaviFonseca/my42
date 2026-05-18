@@ -6,12 +6,10 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/09 21:32:52 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/10 00:18:40 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:20:06 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)

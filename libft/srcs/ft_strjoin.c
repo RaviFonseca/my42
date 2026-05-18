@@ -6,11 +6,10 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/10 20:03:36 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/11 00:23:52 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:58:39 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)

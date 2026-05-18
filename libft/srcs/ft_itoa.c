@@ -6,11 +6,10 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/15 14:31:23 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/15 17:45:44 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 16:47:37 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 int	digits(int n)

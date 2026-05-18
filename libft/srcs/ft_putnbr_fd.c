@@ -6,11 +6,10 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 02:11:53 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/16 02:33:22 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:36:44 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

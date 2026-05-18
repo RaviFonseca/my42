@@ -6,11 +6,11 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 16:07:51 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/20 16:09:48 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 16:46:45 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

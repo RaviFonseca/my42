@@ -6,11 +6,10 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/16 02:48:30 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/16 03:14:48 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 17:31:40 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)

@@ -6,11 +6,10 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/14 16:09:47 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/15 14:08:21 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 18:44:03 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 size_t	counter(char const *s, char delimeter)

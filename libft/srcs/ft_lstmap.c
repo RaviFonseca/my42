@@ -6,12 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/17 19:26:55 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/17 20:49:22 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 17:30:13 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

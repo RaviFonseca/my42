@@ -6,11 +6,11 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 16:06:39 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/04/20 16:07:10 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 16:45:37 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

@@ -6,13 +6,11 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/13 01:07:04 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/14 02:20:55 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/18 19:18:53 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_isset(char c, char const *set)
 {
