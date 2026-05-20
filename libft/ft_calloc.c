@@ -6,7 +6,7 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/08 16:35:20 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/18 16:25:01 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/20 16:58:58 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_calloc(size_t nitems, size_t size)
 	size_t	total;
 	void	*space;
 
+	if (size != 0 && nitems > SIZE_MAX / size)
+		return (NULL);
 	total = nitems * size;
 	space = malloc(total);
 	if (!space)

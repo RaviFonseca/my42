@@ -6,7 +6,7 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/03 14:23:32 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/18 16:16:03 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/20 17:00:04 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,25 @@ int	ft_atoi(const char *str)
 {
 	int	i;
 	int	val;
+	int	sign;
 
 	i = 0;
 	val = 0;
+	sign = 1;
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == ' ')
+		i++;
+	if (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			sign = -1;
+		i++;
+	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		val = val * 10 + (str[i] - 48);
 		i++;
 	}
-	return (val);
+	return (val * sign);
 }
 /*
 #include <stdlib.h>
