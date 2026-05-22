@@ -6,7 +6,7 @@
 #    By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/18 19:50:44 by rfonseca          #+#    #+#              #
-#    Updated: 2026/05/19 18:44:20 by rfonseca         ###   ########.fr        #
+#    Updated: 2026/05/21 17:05:48 by rfonseca         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,17 +36,21 @@ OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(AR) $(NAME) $(OBJ)
+	@$(AR) $(NAME) $(OBJ)
+	@echo "libft.a created"
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ)
+	@$(RM) $(OBJ)
+	@echo "Object files removed"
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
+	@echo "libft.a removed"
 
 re: fclean all
+	@echo "Recompiled successfully"
 
 .PHONY: all clean fclean re

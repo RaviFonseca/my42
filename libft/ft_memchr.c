@@ -6,7 +6,7 @@
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 20:31:46 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/18 17:35:42 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/21 16:35:43 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memchr(const void *str, int c, size_t n)
 {
-	char			nc;
+	unsigned char	nc;
 	size_t			i;
 	unsigned char	*s;
 

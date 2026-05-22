@@ -6,7 +6,7 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 11:01:56 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/18 18:49:18 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/05/21 16:32:13 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *str, int ch)
 			return ((char *)&str[i]);
 		i++;
 	}
-	if (ch == '\0')
+	if ((char)ch == '\0')
 		return ((char *)&str[i]);
 	return (NULL);
 }
