@@ -1,50 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tests.c                                            :+:      :+:    :+:   */
+/*   ft_putunsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfonseca <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 13:59:03 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/25 15:52:05 by rfonseca         ###   ########.fr       */
+/*   Created: 2026/02/16 17:47:15 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/05/30 15:18:10 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "ft_printf.h"
 
-void	print(const char *str)
+unsigned int	ft_putunsigned(unsigned int n)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if (str[i] == '%')
-		{
-			i++;
-			if (str[i] == 'd')
-			{
-				i++;
-				write (1, "decimal\n", 9);
-			}
-			else if (str[i] == 's')
-			{
-				i++;
-				write (1, "string\n", 8);
-			}
-			else if (str[i] == 'c')
-			{
-				i++;
-				write (1, "char\n", 6);
-			}
-		}
-		write(1, &str[i], 1);
-		i++;
-	}
+	if (n >= 10)
+		return (ft_putunsigned(n / 10) + ft_putchar((n % 10) + '0'));
+	else
+		return (ft_putchar(n + '0'));
 }
+/*
+#include <stdio.h>
 
-int main()
-{
-	print("%c %d %s");
+int	main(void){
+
+	int nbr = 123;
+	int counter = ft_putnbr(nbr);
+	printf("\n %d\n",counter);
+	//write(1, "\n",1);
 	return (0);
 }
+*/

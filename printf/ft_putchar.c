@@ -1,7 +1,19 @@
-#include <unistd.h>
-#include "ft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/26 01:45:55 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/05/30 15:15:55 by rfonseca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putchar(char c){
+#include "ft_printf.h"
 
-        write (1, &c, 1);
+int	ft_putchar(char c)
+{
+	write (1, &c, 1);
+	return (1);
 }

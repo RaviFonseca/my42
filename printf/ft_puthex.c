@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/25 19:34:23 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/05/31 02:09:23 by rfonseca         ###   ########.fr       */
+/*   Created: 2026/05/30 14:08:53 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/05/30 16:00:25 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include <unistd.h>
-# include <stdarg.h>
+int	ft_puthex(unsigned long n, char *base)
+{
+	if (n >= 16)
+		return (ft_puthex((n / 16), base) + ft_putchar(base[n % 16]));
+	return (ft_putchar(base[n]));
+}
+/*
+#include <stdio.h>
 
-int				ft_printf(const char *str, ...);
-int				ft_putstr(char *str);
-int				ft_putchar(char c);
-int				ft_putnbr(int nb);
-unsigned int	ft_putunsigned(unsigned int n);
-int				ft_puthex(unsigned long dec_num, char *base);
-
-#endif
+int main()
+{
+	printf("%d", ft_puthex(123,"0123456789abcdef"));
+	return (0);
+}*/

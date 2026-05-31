@@ -1,14 +1,26 @@
-#include <unistd.h>
-#include "ft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/05/26 01:45:41 by rfonseca          #+#    #+#             */
+/*   Updated: 2026/05/30 15:34:38 by rfonseca         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putstr(char *str)
+#include "ft_printf.h"
+
+int	ft_putstr(char *str)
 {
-        int     i;
+	int	i;
 
-        i = 0;
-        while (str[i] != '0')
-        {
-                write (1, &str[i], 1);
-                i++;
-        }
+	i = 0;
+	while (str[i])
+	{
+		write (1, &str[i], 1);
+		i++;
+	}
+	return (i);
 }
