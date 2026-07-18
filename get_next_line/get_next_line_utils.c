@@ -6,7 +6,7 @@
 /*   By: rfonseca <rfonseca@student.42belgium.be>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/20 21:13:52 by rfonseca          #+#    #+#             */
-/*   Updated: 2026/06/21 11:56:09 by rfonseca         ###   ########.fr       */
+/*   Updated: 2026/07/14 17:40:37 by rfonseca         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ char	*ft_strdup(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		  s_dup[i] = s[i];
-		  i++;
+		s_dup[i] = s[i];
+		i++;
 	}
 	s_dup[i] = '\0';
 	return (s_dup);
@@ -87,4 +87,15 @@ char	*ft_strjoin(char *s1, char *s2)
 	}
 	s[i + j] = '\0';
 	return (s);
+}
+
+char	*join_and_free(char *stash, char *buffer)
+{
+	char	*tmp;
+
+	if (!stash)
+		return (ft_strdup(buffer));
+	tmp = ft_strjoin(stash, buffer);
+	free(stash);
+	return (tmp);
 }
